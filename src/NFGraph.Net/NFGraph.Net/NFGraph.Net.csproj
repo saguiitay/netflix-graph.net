@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79466C34-1C0A-4269-93B3-EEDBC0C9F663}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NFGraph.Net</RootNamespace>
+    <AssemblyName>NFGraph.Net</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Build\ArrayExtensions.cs" />
+    <Compile Include="Build\NFBuildGraph.cs" />
+    <Compile Include="Build\NFBuildGraphNode.cs" />
+    <Compile Include="Build\NFBuildGraphNodeCache.cs" />
+    <Compile Include="Build\NFBuildGraphNodeConnections.cs" />
+    <Compile Include="Build\NFBuildGraphOrdinalIterator.cs" />
+    <Compile Include="Build\NFBuildGraphOrdinalSet.cs" />
+    <Compile Include="Compressed\NFCompressedGraphPointers.cs" />
+    <Compile Include="Compressed\SingleOrdinalIterator.cs" />
+    <Compile Include="Compressed\SingleOrdinalSet.cs" />
+    <Compile Include="Compressed\BitSetOrdinalIterator.cs" />
+    <Compile Include="Compressed\BitSetOrdinalSet.cs" />
+    <Compile Include="Compressor\BitSetPropertyBuilder.cs" />
+    <Compile Include="Compressed\CompactOrdinalIterator.cs" />
+    <Compile Include="Compressed\CompactOrdinalSet.cs" />
+    <Compile Include="Compressed\HashSetOrdinalIterator.cs" />
+    <Compile Include="Compressed\HashSetOrdinalSet.cs" />
+    <Compile Include="Compressed\NFCompressedGraphIntPointers.cs" />
+    <Compile Include="Serializer\NFCompressedGraphPointersDeserializer.cs" />
+    <Compile Include="Serializer\NFCompressedGraphPointersSerializer.cs" />
+    <Compile Include="Serializer\NFCompressedGraphSerializer.cs" />
+    <Compile Include="Serializer\NFCompressedGraphDeserializer.cs" />
+    <Compile Include="Util\Mixer.cs" />
+    <Compile Include="Util\SimpleByteArray.cs" />
+    <Compile Include="Util\ByteArrayReader.cs" />
+    <Compile Include="Compressor\CompactPropertyBuilder.cs" />
+    <Compile Include="Compressor\HashedPropertyBuilder.cs" />
+    <Compile Include="Compressed\NFCompressedGraph.cs" />
+    <Compile Include="Compressor\NFCompressedGraphBuilder.cs" />
+    <Compile Include="Compressed\NFCompressedGraphLongPointers.cs" />
+    <Compile Include="Consts.cs" />
+    <Compile Include="NFGraph.cs" />
+    <Compile Include="NFGraphModelHolder.cs" />
+    <Compile Include="Spec\NFGraphSpec.cs" />
+    <Compile Include="Spec\NFNodeSpec.cs" />
+    <Compile Include="Spec\NFPropertySpec.cs" />
+    <Compile Include="OrdinalIterator.cs" />
+    <Compile Include="OrdinalSet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\ByteArrayBuffer.cs" />
+    <Compile Include="Util\ByteData.cs" />
+    <Compile Include="Util\IntegerUtils.cs" />
+    <Compile Include="Util\OrdinalMap.cs" />
+    <Compile Include="Util\SegmentedByteArray.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

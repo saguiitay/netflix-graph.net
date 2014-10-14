@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30915.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFGraph.Net", "NFGraph.Net\NFGraph.Net.csproj", "{79466C34-1C0A-4269-93B3-EEDBC0C9F663}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFGraph.Net.Tests", "NFGraph.Net.Tests\NFGraph.Net.Tests.csproj", "{6BC02876-7C02-4B94-A90B-4A6C47FB8276}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79466C34-1C0A-4269-93B3-EEDBC0C9F663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79466C34-1C0A-4269-93B3-EEDBC0C9F663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79466C34-1C0A-4269-93B3-EEDBC0C9F663}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{79466C34-1C0A-4269-93B3-EEDBC0C9F663}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{79466C34-1C0A-4269-93B3-EEDBC0C9F663}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{79466C34-1C0A-4269-93B3-EEDBC0C9F663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79466C34-1C0A-4269-93B3-EEDBC0C9F663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79466C34-1C0A-4269-93B3-EEDBC0C9F663}.Release|ARM.ActiveCfg = Release|Any CPU
+		{79466C34-1C0A-4269-93B3-EEDBC0C9F663}.Release|x64.ActiveCfg = Release|Any CPU
+		{79466C34-1C0A-4269-93B3-EEDBC0C9F663}.Release|x86.ActiveCfg = Release|Any CPU
+		{6BC02876-7C02-4B94-A90B-4A6C47FB8276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BC02876-7C02-4B94-A90B-4A6C47FB8276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BC02876-7C02-4B94-A90B-4A6C47FB8276}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{6BC02876-7C02-4B94-A90B-4A6C47FB8276}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6BC02876-7C02-4B94-A90B-4A6C47FB8276}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6BC02876-7C02-4B94-A90B-4A6C47FB8276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BC02876-7C02-4B94-A90B-4A6C47FB8276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BC02876-7C02-4B94-A90B-4A6C47FB8276}.Release|ARM.ActiveCfg = Release|Any CPU
+		{6BC02876-7C02-4B94-A90B-4A6C47FB8276}.Release|x64.ActiveCfg = Release|Any CPU
+		{6BC02876-7C02-4B94-A90B-4A6C47FB8276}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
